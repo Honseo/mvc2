@@ -4,9 +4,9 @@ class EmailController < ApplicationController
   end
   
   def email_send
-    @email=params[:email]
-    @content=params[:content]
-    @title=params[:title]
+    email=params[:email]
+    content=params[:content]
+    title=params[:title]
     
     gmail = Gmail.connect("honseoson@gmail.com","ghtjd159")
     gmail.deliver do
