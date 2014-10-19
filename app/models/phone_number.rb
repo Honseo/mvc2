@@ -1,4 +1,4 @@
-class Number < ActiveRecord::Base
+class PhoneNumber < ActiveRecord::Base
   validates :name, :presence => true
   validates :phone_number, :length => { is: 11 }
 end
