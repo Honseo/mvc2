@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   end
   
   def list
-    @number = Number.all
+    @PhoneNumbers = PhoneNumber.all
   end
   
   def add
@@ -12,9 +12,9 @@ class HomeController < ApplicationController
   
   def add_process
     
-    n = Number.new
+    n = PhoneNumber.new
     n.name = params[:phone_user]
-    n.phone_number = params [:phone_number]
+    n.phone_number = params[:phone_number]
     n.save
     
   end
