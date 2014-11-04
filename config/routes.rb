@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "wallcount/write"
+  post "wallcount/write_complete"
+  get "wallcount/posts"
+  
   get 'wall/write' => 'wall#write'
   post 'wall/write_complete' => 'wall#write_complete'
   get 'wall/posts' => 'wall#posts'

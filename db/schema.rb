@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141023194526) do
+ActiveRecord::Schema.define(version: 20141104010837) do
 
   create_table "diet_lists", force: true do |t|
     t.integer  "weight"
@@ -38,6 +38,13 @@ ActiveRecord::Schema.define(version: 20141023194526) do
   create_table "nums", force: true do |t|
     t.string   "name"
     t.string   "phone_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pasts", force: true do |t|
+    t.string   "name"
+    t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
