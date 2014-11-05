@@ -6,6 +6,13 @@ Rails.application.routes.draw do
   get 'wall/write' => 'wall#write'
   post 'wall/write_complete' => 'wall#write_complete'
   get 'wall/posts' => 'wall#posts'
+  get "wall/edit/:id" => 'wall#edit'
+  post "wall/edit_complete"
+  get "wall/delete/:id" => 'wall#delete'
+  post "wall/delete_complete"
+  get "wall/write_comment/:id" => 'wall#write_comment'
+  post "wall/write_comment_complete"
+  
 
   get 'home/hello' => 'home#hello'
   get 'email/email_form' => 'email#email_form'
